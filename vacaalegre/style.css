@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    color: rgb(176, 143, 207);
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px ;
+    position: sticky;
+    background-color: transparent;
+    top: 0;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgb(138, 121, 121);
+}
+.nav_logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.nav_links{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.nav_links a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+.nav-links a:hover{
+    color: darkorchid;
+}
+.nav_actions{
+    display: flex;
+    align-items: center;
+    gap: 14px;   
+}
+.nav_cart{
+    color: slategrey;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.btn_entrar{
+    background-color: darkviolet;
+    color: aliceblue;
+    border: none;
+    padding: 9px 20px;
+    cursor: pointer;
+    gap: 6px;
+    transform: background .2s, transformm .15s;
+}
+.btn_entrar:hover{
+    background: purple;
+    transform: translate(-1px);
+}
+.btn_entrar svg{
+    width: 14px; height: 14px;
+}
+.hero{
+    padding: 60px 48px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.hero_topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.hero_text{
+    flex: 1;
+    min-width: 400px;
+}
+.hero_title{
+    font-family: "Croissant One", serif;
+    font-weight: bold;
+    font-size: 92px;
+    line-height: .85;
+    letter-spacing: -1px;
+
+}
+.hero_title .alegre{
+    color: palevioletred;
+}
+.hero_menu{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: auto;
+}
+.hero_menu_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    background-color: blueviolet;
+    border-radius: 40px;
+    padding: 7px 16px;
+    width: fit-content;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 12px;
+}
+.hero_menu_item:hover{
+    background-color: purple;
+}
+.hero_menu_item svg{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
