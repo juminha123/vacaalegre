@@ -5,7 +5,7 @@
     padding: 0;
 }
 body{
-    background-color: white;
+    background-color: rgb(228, 203, 229);
     color: rgb(176, 143, 207);
     overflow-x: hidden;
 }
@@ -188,4 +188,53 @@ nav{
 }
 .btn_contato:hover{
     transform: translateY(-2px);
+}
+.cardapio{
+    padding: 80px 48px 60px;
+}
+.cardapio-title{
+    font-family: "Croissant One", serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -1px;
+    color: #d7a8ff;
+}
+.carousel-wrapper{
+    position: relative;
+}
+.carousel-track-outer{
+    overflow: hidden;
+    border-radius: 18px;
+}
+.carousel-track{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    flex: 0 0 calc(33.333% - 14px);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform .25s;
+    background-color: #1a0a63;
+}
+.card:hover{
+    transform: translateY(-4px);
+}
+.card-img-placeholder{
+    position: absolute;
+    background: linear-gradient(160deg, ddd5ff 0%, #d7a8ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #24105c;
+    inset: 0;
+    
 }
