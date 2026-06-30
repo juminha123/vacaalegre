@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cookie&family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(254, 237, 246);
+    color: rgb(176, 143, 207);
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+    position: sticky;
+    background-color: transparent;
+    top: 0;
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid rgb(108, 43, 255, 0.07);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+
+.nav-links a:hover {
+    color: darkorchid;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-cart {
+    color: slategrey;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-entrar {
+    background-color: darkviolet;
+    color: aliceblue;
+    border: none;
+    padding: 9px 20px;
+    cursor: pointer;
+    gap: 6px;
+    transform: background .2s, transformm .15s;
+}
+
+.btn-entrar:hover {
+    background: purple;
+    transform: translate(-1px);
+}
+
+.btn-entrar svg {
+    width: 14px;
+    height: 14px;
+}
+.escrito{
+    width: 950px;
+    height: 400px;
+    background-color: rgb(245, 196, 222);
+    border: rgb(209, 142, 178);
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    background: linear-gradient( solid 2px purple, 2px pink);
+}
+
+footer{
+    background-color: #f6f4ff;
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(108, 43, 255, 0.08);
+}
+.footer-copy{
+    color: #5519ee;
+    letter-spacing: 5px;
+}
+.footer-sociais{
+    display: flex;
+    gap: 14px;
+}
+.footer-sociais a{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(108, 43, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #24105c;
+    text-decoration: none;
+}

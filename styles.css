@@ -359,3 +359,13 @@ footer{
     color: #24105c;
     text-decoration: none;
 }
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ddd5ff;
+}
+.dot.active{
+    background-color: #24105c;
+    transform: scale(1.35);
+}
