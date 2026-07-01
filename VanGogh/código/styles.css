@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: url("noiteestrelada.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 70px 5px 15px;
+    padding-top: 10px;
+    position: sticky;
+    background-color: transparent;
+    top: 0;
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid rgb(108, 43, 255, 0.07);
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    color: gold;
+    text-align: center;    
+}
+.escrita-logo{
+    padding: 5px;
+}
+.img-logo img {
+    width: auto;
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav-links a:hover {
+    color: rgb(80, 153, 255);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-cart {
+    color: slategrey;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+footer{
+    background-color: transparent;
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(108, 43, 255, 0.08);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 48px;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid rgb(108, 43, 255, 0.07);
+}
+.footer-copy{
+    color: gold;
+    letter-spacing: 5px;
+}
+.footer-sociais{
+    display: flex;
+    gap: 14px;
+}
+.footer-sociais a{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(108, 43, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    text-decoration: none;
+}
+
+/* -------- MENU QUE DESCE PRA BAIXO ---------- */
+ ul{
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        display: inline-block;
+    }
+    li a, .dropbtn{
+        display: inline-block;
+        color: gold;
+        text-decoration: none;
+        text-align: center;
+        font-size: 30px;
+    }
+    li .dropdown{
+        display:inline-block ;
+    }
+    .contet{
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 150px;
+    }
+    .contet a{
+        color: black;
+        display: block;
+        text-align: left;
+        border: 1px solid #ccc;
+    }
+
+    .dropdown:hover .contet{
+        display: block;
+    }
